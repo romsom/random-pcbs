@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:DIO_FATAR-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -105,12 +105,12 @@ $EndComp
 $Comp
 L Device:R_Network05 RN1
 U 1 1 5C64ADC8
-P 7150 1700
-F 0 "RN1" V 6733 1700 50  0000 C CNN
-F 1 "5*10k" V 6824 1700 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 7525 1700 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7150 1700 50  0001 C CNN
-	1    7150 1700
+P 7150 1750
+F 0 "RN1" V 6733 1750 50  0000 C CNN
+F 1 "5*10k" V 6824 1750 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 7525 1750 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7150 1750 50  0001 C CNN
+	1    7150 1750
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -140,22 +140,6 @@ Text Label 7750 4450 0    50   ~ 0
 T_L_7
 Text Label 7750 3900 0    50   ~ 0
 T_L_2
-Wire Wire Line
-	8000 3700 7750 3700
-Wire Wire Line
-	8000 3800 7750 3800
-Wire Wire Line
-	7750 3900 8000 3900
-Wire Wire Line
-	8000 4000 7750 4000
-Wire Wire Line
-	7750 4100 8000 4100
-Wire Wire Line
-	8000 4200 7750 4200
-Wire Wire Line
-	7750 4300 8000 4300
-Wire Wire Line
-	7750 4450 8000 4450
 Text Notes 650  7500 0    50   ~ 0
 Left and Right are as seen from the playing position right before the keyboard
 Text Label 6550 2900 0    50   ~ 0
@@ -385,7 +369,7 @@ SI
 Wire Wire Line
 	8000 3600 7650 3600
 Wire Wire Line
-	7650 3600 7650 2600
+	7650 3600 7650 3100
 Wire Wire Line
 	7650 2600 9200 2600
 Wire Wire Line
@@ -409,26 +393,8 @@ Text Label 7750 2400 0    50   ~ 0
 T_R_7
 Text Label 7750 1850 0    50   ~ 0
 T_R_2
-Wire Wire Line
-	8000 1650 7750 1650
-Wire Wire Line
-	8000 1750 7750 1750
-Wire Wire Line
-	7750 1850 8000 1850
-Wire Wire Line
-	8000 1950 7750 1950
-Wire Wire Line
-	7750 2050 8000 2050
-Wire Wire Line
-	8000 2150 7750 2150
-Wire Wire Line
-	7750 2250 8000 2250
-Wire Wire Line
-	7750 2400 8000 2400
 Text Label 7750 1550 0    50   ~ 0
 SI_THRU
-Wire Wire Line
-	7750 1550 8000 1550
 Text Label 7900 1350 0    50   ~ 0
 SC
 Wire Wire Line
@@ -453,64 +419,57 @@ Wire Wire Line
 $Comp
 L Device:R_Network05 RN2
 U 1 1 5C69FE8F
-P 7150 2450
-F 0 "RN2" V 6733 2450 50  0000 C CNN
-F 1 "5*10k" V 6824 2450 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 7525 2450 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7150 2450 50  0001 C CNN
-	1    7150 2450
-	0    -1   1    0   
+P 7100 2500
+F 0 "RN2" V 6683 2500 50  0000 C CNN
+F 1 "5*10k" V 6774 2500 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 7475 2500 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7100 2500 50  0001 C CNN
+	1    7100 2500
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Network05 RN3
 U 1 1 5C69FEE7
-P 7150 3250
-F 0 "RN3" V 6733 3250 50  0000 C CNN
-F 1 "5*10k" V 6824 3250 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 7525 3250 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7150 3250 50  0001 C CNN
-	1    7150 3250
+P 7150 3300
+F 0 "RN3" V 6733 3300 50  0000 C CNN
+F 1 "5*10k" V 6824 3300 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 7525 3300 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7150 3300 50  0001 C CNN
+	1    7150 3300
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Network05 RN4
 U 1 1 5C69FF31
-P 7150 4000
-F 0 "RN4" V 6733 4000 50  0000 C CNN
-F 1 "5*10k" V 6824 4000 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 7525 4000 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7150 4000 50  0001 C CNN
-	1    7150 4000
-	0    -1   1    0   
+P 7150 4300
+F 0 "RN4" V 6733 4300 50  0000 C CNN
+F 1 "5*10k" V 6824 4300 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 7525 4300 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7150 4300 50  0001 C CNN
+	1    7150 4300
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6950 3800 6900 3800
+	6900 4500 6900 3100
 Wire Wire Line
-	6900 3800 6900 3050
+	6950 1550 6900 1550
+Connection ~ 6900 1550
 Wire Wire Line
-	6950 1500 6900 1500
-Connection ~ 6900 1500
+	6900 1550 6900 1150
 Wire Wire Line
-	6900 1500 6900 1100
+	6950 3100 6900 3100
+Connection ~ 6900 3100
 Wire Wire Line
-	6950 2250 6900 2250
-Connection ~ 6900 2250
-Wire Wire Line
-	6900 2250 6900 1500
-Wire Wire Line
-	6950 3050 6900 3050
-Connection ~ 6900 3050
-Wire Wire Line
-	6900 3050 6900 2250
+	6900 3100 6900 2700
 $Comp
 L power:+5V #PWR0107
 U 1 1 5C6AAD2A
-P 6900 1100
-F 0 "#PWR0107" H 6900 950 50  0001 C CNN
-F 1 "+5V" H 6915 1273 50  0000 C CNN
-F 2 "" H 6900 1100 50  0001 C CNN
-F 3 "" H 6900 1100 50  0001 C CNN
-	1    6900 1100
+P 6900 1150
+F 0 "#PWR0107" H 6900 1000 50  0001 C CNN
+F 1 "+5V" H 6915 1323 50  0000 C CNN
+F 2 "" H 6900 1150 50  0001 C CNN
+F 3 "" H 6900 1150 50  0001 C CNN
+	1    6900 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -868,4 +827,84 @@ NoConn ~ 4450 3550
 NoConn ~ 4450 3650
 NoConn ~ 4450 3750
 NoConn ~ 4450 3850
+Wire Wire Line
+	7350 1550 8000 1550
+Wire Wire Line
+	7350 1650 8000 1650
+Wire Wire Line
+	7350 1750 8000 1750
+Wire Wire Line
+	7350 1850 8000 1850
+Wire Wire Line
+	7350 1950 8000 1950
+Wire Wire Line
+	7350 2050 7350 2300
+Wire Wire Line
+	7350 2050 8000 2050
+Wire Wire Line
+	7400 2150 7400 2400
+Wire Wire Line
+	7400 2150 8000 2150
+Wire Wire Line
+	7450 2250 7450 2500
+Wire Wire Line
+	7450 2250 8000 2250
+Wire Wire Line
+	7500 2400 7500 2600
+Wire Wire Line
+	7500 2400 8000 2400
+Wire Wire Line
+	7350 3100 7650 3100
+Connection ~ 7650 3100
+Wire Wire Line
+	7650 3100 7650 2600
+Wire Wire Line
+	7600 3700 7600 3200
+Wire Wire Line
+	7600 3200 7350 3200
+Wire Wire Line
+	7600 3700 8000 3700
+Wire Wire Line
+	7550 3800 7550 3300
+Wire Wire Line
+	7550 3300 7350 3300
+Wire Wire Line
+	7550 3800 8000 3800
+Wire Wire Line
+	7500 3900 7500 3400
+Wire Wire Line
+	7500 3400 7350 3400
+Wire Wire Line
+	7500 3900 8000 3900
+Wire Wire Line
+	7450 4000 7450 3500
+Wire Wire Line
+	7450 3500 7350 3500
+Wire Wire Line
+	7450 4000 8000 4000
+Wire Wire Line
+	7350 4100 8000 4100
+Wire Wire Line
+	7350 4200 8000 4200
+Wire Wire Line
+	7350 4300 8000 4300
+Wire Wire Line
+	7450 4450 7450 4400
+Wire Wire Line
+	7450 4400 7350 4400
+Wire Wire Line
+	7450 4450 8000 4450
+Wire Wire Line
+	7350 2300 7300 2300
+Wire Wire Line
+	7300 2400 7400 2400
+Wire Wire Line
+	7300 2500 7450 2500
+Wire Wire Line
+	7300 2600 7500 2600
+Connection ~ 6900 2700
+Wire Wire Line
+	6900 1550 6900 2700
+Wire Wire Line
+	6900 4500 6950 4500
 $EndSCHEMATC
