@@ -1,4 +1,4 @@
-update=2019-06-08T16:33:15 CEST
+update=2019-06-08T17:17:27 CEST
 version=1
 last_client=kicad
 [general]
@@ -246,4 +246,15 @@ uViaDiameter=0.5
 uViaDrill=0.25
 dPairWidth=0.4
 dPairGap=0.5
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=Serial
+Clearance=0.3
+TrackWidth=0.25
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
 dPairViaGap=0.25

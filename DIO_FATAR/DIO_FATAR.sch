@@ -103,17 +103,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4050 3450 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Network05 RN1
-U 1 1 5C64ADC8
-P 7150 1750
-F 0 "RN1" V 6733 1750 50  0000 C CNN
-F 1 "5*10k" V 6824 1750 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 7525 1750 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7150 1750 50  0001 C CNN
-	1    7150 1750
-	0    -1   1    0   
-$EndComp
-$Comp
 L Device:C C1
 U 1 1 5C64AEDA
 P 1650 4850
@@ -368,8 +357,6 @@ Text Label 9100 4400 0    50   ~ 0
 SI
 Wire Wire Line
 	8000 3600 7650 3600
-Wire Wire Line
-	7650 3600 7650 3100
 Wire Wire Line
 	7650 2600 9200 2600
 Wire Wire Line
@@ -659,7 +646,7 @@ F 3 "" H 3200 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 3550 3650 3550
+	3200 3550 3450 3550
 Text Label 3550 2200 0    50   ~ 0
 SO
 Wire Wire Line
@@ -678,16 +665,9 @@ Connection ~ 3450 1900
 Wire Wire Line
 	3450 1900 3650 1900
 Wire Wire Line
-	3450 3850 3450 4050
-Wire Wire Line
 	3450 4050 4050 4050
-Connection ~ 3450 3850
-Wire Wire Line
-	3450 3850 3650 3850
 Text Label 4450 2950 0    50   ~ 0
 SO_THRU
-Wire Wire Line
-	2950 3850 3450 3850
 $Comp
 L power:GND #PWR0112
 U 1 1 5C878E48
@@ -828,8 +808,6 @@ NoConn ~ 4450 3650
 NoConn ~ 4450 3750
 NoConn ~ 4450 3850
 Wire Wire Line
-	7350 1550 8000 1550
-Wire Wire Line
 	7350 1650 8000 1650
 Wire Wire Line
 	7350 1750 8000 1750
@@ -853,11 +831,6 @@ Wire Wire Line
 	7500 2400 7500 2600
 Wire Wire Line
 	7500 2400 8000 2400
-Wire Wire Line
-	7350 3100 7650 3100
-Connection ~ 7650 3100
-Wire Wire Line
-	7650 3100 7650 2600
 Wire Wire Line
 	7600 3700 7600 3200
 Wire Wire Line
@@ -907,4 +880,75 @@ Wire Wire Line
 	6900 1550 6900 2700
 Wire Wire Line
 	6900 4500 6950 4500
+Wire Wire Line
+	2950 3850 3650 3850
+Wire Wire Line
+	3450 4050 3450 3550
+Connection ~ 3450 3550
+Wire Wire Line
+	3450 3550 3650 3550
+Wire Wire Line
+	7650 2600 7650 3600
+$Comp
+L Device:R R?
+U 1 1 5D186C46
+P 7450 1400
+F 0 "R?" H 7520 1446 50  0000 L CNN
+F 1 "10k" H 7520 1355 50  0000 L CNN
+F 2 "" V 7380 1400 50  0001 C CNN
+F 3 "~" H 7450 1400 50  0001 C CNN
+	1    7450 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D187152
+P 9200 2200
+F 0 "R?" H 9270 2246 50  0000 L CNN
+F 1 "10k" H 9270 2155 50  0000 L CNN
+F 2 "" V 9130 2200 50  0001 C CNN
+F 3 "~" H 9200 2200 50  0001 C CNN
+	1    9200 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 9200 2350
+Wire Wire Line
+	7450 1550 8000 1550
+$Comp
+L Device:R_Network05 RN1
+U 1 1 5C64ADC8
+P 7150 1750
+F 0 "RN1" V 6733 1750 50  0000 C CNN
+F 1 "5*10k" V 6824 1750 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 7525 1750 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7150 1750 50  0001 C CNN
+	1    7150 1750
+	0    -1   1    0   
+$EndComp
+NoConn ~ 7350 1550
+NoConn ~ 7300 2700
+NoConn ~ 7350 3100
+NoConn ~ 7350 4500
+$Comp
+L power:+5V #PWR?
+U 1 1 5D1B93A5
+P 7450 1250
+F 0 "#PWR?" H 7450 1100 50  0001 C CNN
+F 1 "+5V" H 7465 1423 50  0000 C CNN
+F 2 "" H 7450 1250 50  0001 C CNN
+F 3 "" H 7450 1250 50  0001 C CNN
+	1    7450 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D1B9642
+P 9200 2050
+F 0 "#PWR?" H 9200 1900 50  0001 C CNN
+F 1 "+5V" H 9215 2223 50  0000 C CNN
+F 2 "" H 9200 2050 50  0001 C CNN
+F 3 "" H 9200 2050 50  0001 C CNN
+	1    9200 2050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
