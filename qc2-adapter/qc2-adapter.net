@@ -1,5 +1,5 @@
 ( { EESchema Netlist Version 1.1 created  Sat Dec 14 22:08:49 2019 }
- ( /5DF53024 Package_DIP:DIP-8_W7.62mm_LongPads  U2 LM555
+ ( /5DF53024 DIP8  U2 LM555
   (    1 GND )
   (    2 Net-(C1-Pad1) )
   (    3 Net-(R6-Pad2) )
@@ -9,149 +9,148 @@
   (    7 Net-(C4-Pad1) )
   (    8 +5V )
  )
- ( /5DF6D35E Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical  R10 10k
+ ( /5DF6D35E RESISTOR  R10 10k
   (    1 Net-(Q2-Pad1) )
   (    2 GND )
  )
- ( /5DF74376 Package_TO_SOT_THT:TO-92_Inline_Wide  Q10 BC548
+ ( /5DF74376 TO92  Q10 BC548
   (    1 /d- )
   (    2 Net-(C6-Pad1) )
   (    3 GND )
  )
- ( /5DF74396 Package_TO_SOT_THT:TO-92_Inline_Wide  Q4 BC548
+ ( /5DF74396 TO92  Q4 BC548
   (    1 Net-(C6-Pad1) )
   (    2 Net-(Q1-Pad1) )
   (    3 GND )
  )
- ( /5DF743A0 Package_TO_SOT_THT:TO-92_Inline_Wide  Q5 BC548
+ ( /5DF743A0 TO92  Q5 BC548
   (    1 Net-(C6-Pad1) )
   (    2 Net-(Q5-Pad2) )
   (    3 GND )
  )
- ( /5DF743B6 Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical  R11 10k
+ ( /5DF743B6 RESISTOR  R11 10k
   (    1 +5V )
   (    2 Net-(C6-Pad1) )
  )
- ( /5DF743C1 Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm  C6 C
+ ( /5DF743C1 CAP_FILM  C6 C
   (    1 Net-(C6-Pad1) )
   (    2 GND )
  )
- ( /5DF743D0 Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm  C5 C
+ ( /5DF743D0 CAP_FILM  C5 C
   (    1 +5V )
   (    2 Net-(C5-Pad2) )
  )
- ( /5DF743DC Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical  R12 10k
+ ( /5DF743DC RESISTOR  R12 10k
   (    1 Net-(C5-Pad2) )
   (    2 GND )
  )
- ( /5DF7D1F8 Package_TO_SOT_THT:TO-92_Inline_Wide  Q1 BC548
+ ( /5DF7D1F8 TO92  Q1 BC548
   (    1 Net-(Q1-Pad1) )
   (    2 /en )
   (    3 GND )
  )
- ( /5DF8C6FF Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical  R7 10k
+ ( /5DF8C6FF RESISTOR  R7 10k
   (    1 +5V )
   (    2 Net-(Q1-Pad1) )
  )
- ( /5DF9C916 Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical  R6 4.7k
+ ( /5DF9C916 RESISTOR  R6 4.7k
   (    1 /en )
   (    2 Net-(R6-Pad2) )
  )
- ( /5DFA0A37 Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm  C4 150nF
+ ( /5DFA0A37 CAP_FILM  C4 150nF
   (    1 Net-(C4-Pad1) )
   (    2 GND )
  )
- ( /5DFA0DFC Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical  R5 10k
+ ( /5DFA0DFC RESISTOR  R5 10k
   (    1 +5V )
   (    2 Net-(C4-Pad1) )
  )
- ( /5DFB5E2E Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm  C2 10nF
+ ( /5DFB5E2E CAP_FILM  C2 10nF
   (    1 Net-(C2-Pad1) )
   (    2 GND )
  )
- ( /5DFC40B9 Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm  C1 C
+ ( /5DFC40B9 CAP_FILM  C1 C
   (    1 Net-(C1-Pad1) )
   (    2 GND )
  )
- ( /5DFCB059 Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical  R1 R
+ ( /5DFCB059 RESISTOR  R1 R
   (    1 +5V )
   (    2 Net-(C1-Pad1) )
  )
- ( /5DF5B981 Package_TO_SOT_THT:TO-92_Inline_Wide  Q2 BC558
+ ( /5DF5B981 TO92  Q2 BC558
   (    1 Net-(Q2-Pad1) )
   (    2 /en+in- )
   (    3 +5V )
  )
- ( /5DF7438B Package_TO_SOT_THT:TO-92_Inline_Wide  Q7 BC558
+ ( /5DF7438B TO92  Q7 BC558
   (    1 Net-(C5-Pad2) )
   (    2 /en- )
   (    3 +5V )
  )
- ( /5DF74381 Package_TO_SOT_THT:TO-92_Inline_Wide  Q3 BC558
+ ( /5DF74381 TO92  Q3 BC558
   (    1 Net-(C5-Pad2) )
   (    2 /en+in- )
   (    3 +5V )
  )
- ( /5DF743AC Package_TO_SOT_THT:TO-92_Inline_Wide  Q9 BC558
+ ( /5DF743AC TO92  Q9 BC558
   (    1 /d- )
   (    2 Net-(C5-Pad2) )
   (    3 +5V )
  )
- ( /5DF537BF Package_TO_SOT_THT:TO-92_Inline_Wide  Q8 BC558
+ ( /5DF537BF TO92  Q8 BC558
   (    1 /d+ )
   (    2 Net-(Q2-Pad1) )
   (    3 +5V )
  )
- ( /5E01E6B6 Package_TO_SOT_THT:TO-92_Inline_Wide  Q6 BC558
+ ( /5E01E6B6 TO92  Q6 BC558
   (    1 Net-(Q2-Pad1) )
   (    2 /en )
   (    3 +5V )
  )
- ( /5E024EFB Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical  J2 en-
+ ( /5E024EFB SIP2  J2 en-
   (    1 /en- )
   (    2 /en )
  )
- ( /5E040CBC Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical  J3 en+
+ ( /5E040CBC SIP2  J3 en+
   (    1 +5V )
   (    2 /en+in- )
  )
- ( /5E047719 Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical  R9 10k
+ ( /5E047719 RESISTOR  R9 10k
   (    1 /en+in- )
   (    2 GND )
  )
- ( /5E05E100 Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical  R8 4.7k
+ ( /5E05E100 RESISTOR  R8 4.7k
   (    1 Net-(Q5-Pad2) )
   (    2 /en+in- )
  )
- ( /5E0903EF Package_TO_SOT_THT:TO-92_Inline_Wide  U1 LM317L_TO92
+ ( /5E0903EF TO92  U1 LM317L_TO92
   (    1 Net-(R2-Pad2) )
   (    2 +5V )
   (    3 Net-(J1-Pad1) )
  )
- ( /5E095F1E Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical  R2 220
+ ( /5E095F1E RESISTOR  R2 220
   (    1 +5V )
   (    2 Net-(R2-Pad2) )
  )
- ( /5E0965D8 Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical  R3 330
+ ( /5E0965D8 RESISTOR  R3 330
   (    1 Net-(R2-Pad2) )
   (    2 Net-(R3-Pad2) )
  )
- ( /5E096840 Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical  R4 330
+ ( /5E096840 RESISTOR  R4 330
   (    1 Net-(R3-Pad2) )
   (    2 GND )
  )
- ( /5E0A52B8 Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm  C3 C
+ ( /5E0A52B8 CAP_FILM  C3 C
   (    1 +5V )
   (    2 GND )
  )
- ( /5E0B6AB6 Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal  J1 USB_B
+ ( /5E0B6AB6 PADS4  J1 USB_B
   (    1 Net-(J1-Pad1) )
   (    2 /d- )
   (    3 /d+ )
   (    4 GND )
-  (    5 GND )
  )
- ( /5E0B7E4E Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical  J4 Vout
+ ( /5E0B7E4E SIP2  J4 Vout
   (    1 GND )
   (    2 Net-(J1-Pad1) )
  )
