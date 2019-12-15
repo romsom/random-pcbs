@@ -1,4 +1,4 @@
-( { EESchema Netlist Version 1.1 created  Sat Dec 14 22:08:49 2019 }
+( { EESchema Netlist Version 1.1 created  Sun Dec 15 06:41:28 2019 }
  ( /5DF53024 DIP8  U2 LM555
   (    1 GND )
   (    2 Net-(C1-Pad1) )
@@ -14,7 +14,7 @@
   (    2 GND )
  )
  ( /5DF74376 TO92  Q10 BC548
-  (    1 /d- )
+  (    1 /d-control )
   (    2 Net-(C6-Pad1) )
   (    3 GND )
  )
@@ -93,12 +93,12 @@
   (    3 +5V )
  )
  ( /5DF743AC TO92  Q9 BC558
-  (    1 /d- )
+  (    1 /d-control )
   (    2 Net-(C5-Pad2) )
   (    3 +5V )
  )
  ( /5DF537BF TO92  Q8 BC558
-  (    1 /d+ )
+  (    1 /d+control )
   (    2 Net-(Q2-Pad1) )
   (    3 +5V )
  )
@@ -144,15 +144,40 @@
   (    1 +5V )
   (    2 GND )
  )
- ( /5E0B6AB6 PADS4  J1 USB_B
+ ( /5E0B6AB6 PADS5  J1 USB_B
   (    1 Net-(J1-Pad1) )
   (    2 /d- )
   (    3 /d+ )
   (    4 GND )
+  (    5 GND )
  )
  ( /5E0B7E4E SIP2  J4 Vout
   (    1 GND )
   (    2 Net-(J1-Pad1) )
+ )
+ ( /5E0DB67F RESISTOR  R13 10k
+  (    1 +5V )
+  (    2 /d+ )
+ )
+ ( /5E0DBDBA RESISTOR  R14 1.5k
+  (    1 /d+ )
+  (    2 GND )
+ )
+ ( /5E0DC6DD RESISTOR  R16 10k
+  (    1 +5V )
+  (    2 /d- )
+ )
+ ( /5E0DC6E7 RESISTOR  R17 1.5k
+  (    1 /d- )
+  (    2 GND )
+ )
+ ( /5E0E0A0A RESISTOR  R15 470
+  (    1 /d+control )
+  (    2 /d+ )
+ )
+ ( /5E0E53E4 RESISTOR  R18 470
+  (    1 /d-control )
+  (    2 /d- )
  )
 )
 *

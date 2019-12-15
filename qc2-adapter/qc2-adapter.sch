@@ -351,7 +351,7 @@ Wire Wire Line
 	7200 4450 7200 4250
 Wire Wire Line
 	7200 800  6750 800 
-Text Label 9850 1800 0    50   ~ 0
+Text Label 5200 5700 0    50   ~ 0
 d+
 $Comp
 L Transistor_BJT:BC558 Q2
@@ -536,7 +536,7 @@ Wire Wire Line
 Wire Wire Line
 	7550 2100 7550 2500
 Connection ~ 7550 2500
-Text Label 9850 3950 0    50   ~ 0
+Text Label 6250 5700 0    50   ~ 0
 d-
 $Comp
 L Device:R R8
@@ -750,4 +750,120 @@ Wire Wire Line
 Connection ~ 1650 5400
 Text Label 4200 4650 0    50   ~ 0
 GND
+$Comp
+L Device:R R13
+U 1 1 5E0DB67F
+P 5200 5450
+F 0 "R13" H 5270 5496 50  0000 L CNN
+F 1 "10k" H 5270 5405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 5130 5450 50  0001 C CNN
+F 3 "~" H 5200 5450 50  0001 C CNN
+	1    5200 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5E0DBDBA
+P 5200 5950
+F 0 "R14" H 5270 5996 50  0000 L CNN
+F 1 "1.5k" H 5270 5905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 5130 5950 50  0001 C CNN
+F 3 "~" H 5200 5950 50  0001 C CNN
+	1    5200 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5E0DC6DD
+P 6250 5450
+F 0 "R16" H 6320 5496 50  0000 L CNN
+F 1 "10k" H 6320 5405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6180 5450 50  0001 C CNN
+F 3 "~" H 6250 5450 50  0001 C CNN
+	1    6250 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5E0DC6E7
+P 6250 5950
+F 0 "R17" H 6320 5996 50  0000 L CNN
+F 1 "1.5k" H 6320 5905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6180 5950 50  0001 C CNN
+F 3 "~" H 6250 5950 50  0001 C CNN
+	1    6250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5E0E0A0A
+P 5600 5700
+F 0 "R15" V 5393 5700 50  0000 C CNN
+F 1 "470" V 5484 5700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 5530 5700 50  0001 C CNN
+F 3 "~" H 5600 5700 50  0001 C CNN
+	1    5600 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5E0E53E4
+P 6650 5700
+F 0 "R18" V 6443 5700 50  0000 C CNN
+F 1 "470" V 6534 5700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6580 5700 50  0001 C CNN
+F 3 "~" H 6650 5700 50  0001 C CNN
+	1    6650 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 5600 5200 5700
+Wire Wire Line
+	5450 5700 5200 5700
+Connection ~ 5200 5700
+Wire Wire Line
+	5200 5700 5200 5800
+Wire Wire Line
+	6250 5600 6250 5700
+Wire Wire Line
+	6500 5700 6250 5700
+Connection ~ 6250 5700
+Wire Wire Line
+	6250 5700 6250 5800
+Wire Wire Line
+	6250 6100 5200 6100
+$Comp
+L power:GND #PWR02
+U 1 1 5E0FAB4B
+P 5200 6100
+F 0 "#PWR02" H 5200 5850 50  0001 C CNN
+F 1 "GND" H 5205 5927 50  0000 C CNN
+F 2 "" H 5200 6100 50  0001 C CNN
+F 3 "" H 5200 6100 50  0001 C CNN
+	1    5200 6100
+	1    0    0    -1  
+$EndComp
+Connection ~ 5200 6100
+$Comp
+L power:+5V #PWR01
+U 1 1 5E0FAE4D
+P 5200 5300
+F 0 "#PWR01" H 5200 5150 50  0001 C CNN
+F 1 "+5V" H 5215 5473 50  0000 C CNN
+F 2 "" H 5200 5300 50  0001 C CNN
+F 3 "" H 5200 5300 50  0001 C CNN
+	1    5200 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5300 5200 5300
+Connection ~ 5200 5300
+Text Label 9850 3950 0    50   ~ 0
+d-control
+Text Label 6800 5700 0    50   ~ 0
+d-control
+Text Label 5750 5700 0    50   ~ 0
+d+control
+Text Label 9850 1900 0    50   ~ 0
+d+control
 $EndSCHEMATC
